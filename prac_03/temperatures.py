@@ -11,6 +11,7 @@ Q - Quit"""
 
 
 def main():
+    """Print menu, ask user to make a selection and to input starting temperature, and print conversion result."""
     print(MENU)
     choice = input(">>> ").upper()
     while choice != "Q":
@@ -30,11 +31,13 @@ def main():
 
 
 def celsius_to_fahrenheit_conversion(celsius):
+    """Calculate and return Celsius to Fahrenheit conversion."""
     fahrenheit = celsius * 9.0 / 5 + 32
     return fahrenheit
 
 
 def fahrenheit_to_celsius_conversion(fahrenheit):
+    """Calculate and return Fahrenheit to Celsius conversion."""
     celsius = 5 / 9 * (fahrenheit - 32)
     return celsius
 
