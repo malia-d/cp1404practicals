@@ -1,6 +1,8 @@
 """
-CP1404/CP5632 - Practical
-Pseudocode for temperature conversion
+Convert between Celsius and Fahrenheit based on user inputs, with error checking for invalid inputs,
+and the option to quit the program.
+
+Temperatures. Created by Malia, March 2021.
 """
 
 MENU = """C - Convert Celsius to Fahrenheit
