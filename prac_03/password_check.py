@@ -1,4 +1,12 @@
-MIN_LENGTH = 6
+"""
+Print the same number of asterisks as there are characters in a user inputted password, with error checking for
+the minimum length.
+
+Password Check. Created by Malia, March 2021.
+"""
+
+MINIMUM_LENGTH = 6
+
 
 user_password = input("Please enter your password: ")
 
