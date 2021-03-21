@@ -9,11 +9,13 @@ MINIMUM_LENGTH = 6
 
 
 def main():
+    """Get user password and print the same number of asterisks as there are characters in the password."""
     password = get_password(MINIMUM_LENGTH)
     print_asterisks(password)
 
 
 def get_password(minimum_length):
+    """Ask user for password and error check it for the minimum_length."""
     password = input("Please enter your password, containing at least {} characters: ".format(minimum_length))
     while len(password) < minimum_length:
         password = input("Your password doesn't contain enough characters.\nPlease enter your password, containing at "
