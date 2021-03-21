@@ -8,15 +8,22 @@ Password Check. Created by Malia, March 2021.
 MINIMUM_LENGTH = 6
 
 
-user_password = input("Please enter your password: ")
+def main():
+    password = get_password(MINIMUM_LENGTH)
+    print_asterisks(password)
 
-password_length = len(user_password)
 
-while password_length < MIN_LENGTH:
-    print("Your password must contain a minimum of 6 characters")
-    user_password = input("Please enter your password: ")
-    password_length = len(user_password)
+def get_password(minimum_length):
+    password = input("Please enter your password, containing at least {} characters: ".format(minimum_length))
+    while len(password) < minimum_length:
+        password = input("Your password doesn't contain enough characters.\nPlease enter your password, containing at "
+                         "least {} characters: ".format(minimum_length))
+    return password
 
-else:
-    for i in range(password_length):
+
+def print_asterisks(password):
+    for i in range(len(password)):
         print("*", end='')
+
+
+main()
