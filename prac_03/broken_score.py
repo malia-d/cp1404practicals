@@ -10,6 +10,9 @@ def main():
     score = float(input("Enter score: "))
     print(determine_score_status(score))
 
+    score = random.randint(0, 100)  # Generate a random score
+    print(determine_score_status(score))
+
 
 def determine_score_status(score):
     """Return the result that corresponds with the score."""
