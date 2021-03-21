@@ -1,6 +1,7 @@
 """
-CP1404/CP5632 - Practical
-Broken program to determine score status
+Receive a user inputted score, and a randomly generated score, and print the corresponding results.
+
+Broken Score. Created by Malia, March 2021.
 """
 
 score = float(input("Enter score: "))
