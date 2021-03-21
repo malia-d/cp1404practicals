@@ -4,13 +4,24 @@ Receive a user inputted score, and a randomly generated score, and print the cor
 Broken Score. Created by Malia, March 2021.
 """
 
-score = float(input("Enter score: "))
-# If the score is greater than or equal to 90, or less than or equal to 100, print "Excellent"
-if 90 <= score <= 100:
-    print("Excellent")
-elif score >= 50:
-    print("Passable")
-elif score >= 0:
-    print("Bad")
-else:
-    print("Invalid score")
+
+def main():
+    score = float(input("Enter score: "))
+    print(determine_score_status(score))
+
+
+def determine_score_status(score):
+    # If the score is greater than or equal to 90, or less than or equal to 100, print "Excellent"
+    if 90 <= score <= 100:
+        return "Excellent"
+    # If the score is greater than or equal to 50, or less than or equal to 89, print "Passable"
+    elif 50 <= score <= 89:
+        return "Passable"
+    # If the score is greater than or equal to 0, or less than or equal to 59, print "Bad"
+    elif 0 <= score <= 49:
+        return "Bad"
+    else:
+        return "Invalid score"
+
+
+main()
