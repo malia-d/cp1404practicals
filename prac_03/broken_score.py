@@ -3,6 +3,7 @@ Receive a user inputted score, and a randomly generated score, and print the cor
 
 Broken Score. Created by Malia, March 2021.
 """
+import random
 
 
 def main():
