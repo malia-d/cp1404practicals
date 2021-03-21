@@ -6,11 +6,13 @@ Broken Score. Created by Malia, March 2021.
 
 
 def main():
+    """Receive scores and print their corresponding results."""
     score = float(input("Enter score: "))
     print(determine_score_status(score))
 
 
 def determine_score_status(score):
+    """Return the result that corresponds with the score."""
     # If the score is greater than or equal to 90, or less than or equal to 100, print "Excellent"
     if 90 <= score <= 100:
         return "Excellent"
