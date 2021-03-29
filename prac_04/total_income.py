@@ -1,8 +1,3 @@
-"""
-CP1404/CP5632 Practical
-Starter code for cumulative total income program
-"""
-
 
 def main():
     """Display income report for incomes over a given number of months."""
@@ -17,6 +12,7 @@ def main():
 
 
 def print_report(incomes, number_of_months):
+    """Print an income report for the given number of months."""
     print("\nIncome Report\n-------------")
     total = 0
     for month in range(1, number_of_months + 1):
