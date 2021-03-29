@@ -1,3 +1,10 @@
+"""
+Calculate the monthly cumulative income totals for a given number of months and display an income report, showing the
+income each month and the cumulative income.
+
+Total Income. Created by Malia, March 2021.
+"""
+
 
 def main():
     """Display income report for incomes over a given number of months."""
