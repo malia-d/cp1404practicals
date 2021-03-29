@@ -1,4 +1,8 @@
+"""
+Print a number of list comprehensions based off two provided lists.
 
+List Comprehensions. Created by Malia, March 2021.
+"""
 
 names = ["Bob", "Angel", "Jimi", "Alan", "Ada"]
 full_names = ["Bob Martin", "Angel Harlem", "Jimi Hendrix", "Alan Turing",
