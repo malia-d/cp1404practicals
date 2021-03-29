@@ -1,3 +1,9 @@
+"""
+Display a user given number of lines, each with six digits between the minimum value, 1, and the maximum value, 45.
+
+Quick Picks. Created by Malia, March 2021.
+"""
+
 import random
 
 NUMBERS_PER_LINE = 6
