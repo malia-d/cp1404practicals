@@ -1,6 +1,8 @@
 """
-CP1404/CP5632 Practical
-Data file -> lists program
+Display subject information, including the name of the subject, lecturer, and the number of students, by converting
+strings to lists.
+
+Subject Reader. Created by Malia, March 2021.
 """
 
 FILENAME = "subject_data.txt"
