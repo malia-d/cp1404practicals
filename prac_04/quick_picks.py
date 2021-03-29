@@ -6,6 +6,7 @@ MINIMUM_NUMBER = 1
 
 
 def main():
+    """Display a user given number of lines, with six digits each that range from 1 to 45."""
     number_of_quick_picks = int(input("How many quick picks? "))
     for i in range(number_of_quick_picks):
         quick_picks = []
