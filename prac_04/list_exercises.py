@@ -1,3 +1,11 @@
+"""
+1. Return the first, last, smallest, largest, and average of five user given integers.
+2. Ask users for a username and determine if it is included in a given list if usernames, if so access is granted, if
+not, access is denied.
+
+Total Income. Created by Malia, March 2021.
+"""
+
 # 1. Basic list operations
 numbers = []
 
