@@ -1,4 +1,5 @@
 def main():
+    """Create a dictionary of emails as keys and names as values, and print them using string formatting. """
     email_to_name = {}
     email = input("Email: ")
     while email != "":
@@ -14,6 +15,7 @@ def main():
 
 
 def get_name_from_email(email):
+    """Get the name from a user inputted email address."""
     parts = email.split("@")[0]
     parts = parts.split(".")
     name = " ".join(parts)
