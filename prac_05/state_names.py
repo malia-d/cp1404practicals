@@ -1,8 +1,8 @@
 """
-Receive a user input, state_code, and if it is contained within the dictionary, CODE_TO_NAME, it prints the full state
-name, and continues to prompt the user for a new input. If it is not contained in the dictionary, it prints an invalid
-input message and prompts the user for a new input. It also contains a 'for' loop that prints all of the state
-abbreviations and their full names, lined up using string formatting.
+This program receives a user input, state_code, and if it is contained within the dictionary, CODE_TO_NAME, it prints
+the state name abbreviation and the full state name, and continues to prompt the user for a new input. If it is not
+contained in the dictionary, it prints an invalid input message and prompts the user for a new input. It also contains a
+'for' loop that prints all of the state name abbreviations and their full names, lined up using string formatting.
 
 State Names. Created by Malia, April 2021.
 """
@@ -12,6 +12,7 @@ CODE_TO_NAME = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern T
 print(CODE_TO_NAME)
 
 state_code = input("Enter short state: ").upper()
+# While the user input is not blank the loop proceeds, but if the user input is blank the 'while' loop stops.
 while state_code != "":
     # If state_code is in CODE_TO_NAME the loop prints the state code and its full name, then asks for another input.
     if state_code in CODE_TO_NAME:

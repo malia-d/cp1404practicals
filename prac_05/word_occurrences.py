@@ -16,9 +16,9 @@ for word in words:
         word_to_count[word] += 1
     else:
         word_to_count[word] = 1
-word_list = list(word_to_count.keys())  # Creating a list of the dictionary
-word_list.sort()  # Sorting the list into alphabetical order
-longest_word = max(len(word) for word in word_list) # Determining the number of characters in the longest word
+word_list = list(word_to_count.keys())  # creating a list of the dictionary
+word_list.sort()  # sorting the list into alphabetical order
+longest_word = max(len(word) for word in word_list)  # determining the number of characters in the longest word
 for word in word_list:
     # Using string formatting and the number of characters in the longest word to align the values.
     print("{:{}} : {}".format(word, longest_word, word_to_count[word]))

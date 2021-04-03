@@ -1,7 +1,7 @@
 """
-Receive a user input, colour_name, and if it is contained within the dictionary, NAME_TO_CODE, it prints the colour name
-and code, and continues to prompt the user for a new input. If it is not contained in the dictionary, it prints an
-invalid input message and prompts the user for a new input.
+This program receives a user input, colour_name, and if it is contained within the dictionary, NAME_TO_CODE, it prints
+the colour name and code, and continues to prompt the user for a new input. If it is not contained in the dictionary, it
+prints an invalid input message and prompts the user for a new input.
 
 Hex Colours. Created by Malia, April 2021.
 """
