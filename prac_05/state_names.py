@@ -11,4 +11,5 @@ while state_code != "":
         print("Invalid short state")
     state_code = input("Enter short state: ").upper()
 
-
+for state_code in CODE_TO_NAME:
+    print("{0:3} is {1:1}".format(state_code, CODE_TO_NAME[state_code]))
