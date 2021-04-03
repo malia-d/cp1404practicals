@@ -1,3 +1,14 @@
+"""
+This program asks the user to input an email address which it then uses to extract a name from. The user is then asked
+if the name it extracted is correct. If the user input is 'Y', 'y' or blank it accepts it's correct. If the input is
+anything else, the program asks the user to input the name. The name and email are stored as key/value pairs in a
+dictionary and the program proceeds to ask for another email. Once the user email input is blank the program prints each
+name with it's corresponding email.
+
+Emails. Created by Malia, April 2021.
+"""
+
+
 def main():
     """Create a dictionary of emails as keys and names as values, and print them using string formatting. """
     email_to_name = {}
