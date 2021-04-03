@@ -1,8 +1,7 @@
 """
-This program asks the user to input a string of text which is iterated through, adding each word to a dictionary as a
-key and the number of occurrences of each word as a value. It then prints the each word and it's number of occurrences.
-The length of the longest word is determined so that, when printed, the numbers are aligned in one column using string
-formatting.
+Ask the user to input a string of text and iterate through it. Add each word to the dictionary, as a key, and the number
+of occurrences of each word, as a value. Print the each word and it's number of occurrences. Determine the length of the
+longest word in the dictionary and use it to print the words and align the counts in one column using string formatting.
 
 Word Occurrences. Created by Malia, April 2021.
 """
@@ -10,15 +9,17 @@ Word Occurrences. Created by Malia, April 2021.
 word_to_count = {}
 text = input("Text: ")
 words = text.split()
-# If the word is in the dictionary then '1' is added to its count, and if not, it's added as a key with a count of '1'.
+
 for word in words:
+    # Add '1' to word value.
     if word in word_to_count:
         word_to_count[word] += 1
+    # Add word as a key with a value of '1'.
     else:
         word_to_count[word] = 1
-word_list = list(word_to_count.keys())  # creating a list of the dictionary
-word_list.sort()  # sorting the list into alphabetical order
-longest_word = max(len(word) for word in word_list)  # determining the number of characters in the longest word
+word_list = list(word_to_count.keys())  # create a list from the dictionary
+word_list.sort()  # sort the list into alphabetical order
+longest_word = max(len(word) for word in word_list)  # determine the number of characters in the longest word
 for word in word_list:
-    # Using string formatting and the number of characters in the longest word to align the values.
+    # Use string formatting and the number of characters in the longest word to align the values.
     print("{:{}} : {}".format(word, longest_word, word_to_count[word]))
