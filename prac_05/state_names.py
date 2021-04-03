@@ -1,3 +1,11 @@
+"""
+Receive a user input, state_code, and if it is contained within the dictionary, CODE_TO_NAME, it prints the full state
+name, and continues to prompt the user for a new input. If it is not contained in the dictionary, it prints an invalid
+input message and prompts the user for a new input. It also contains a 'for' loop that prints all of the state
+abbreviations and their full names, lined up using string formatting.
+
+State Names. Created by Malia, April 2021.
+"""
 
 CODE_TO_NAME = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern Territory", "WA": "Western Australia",
                 "ACT": "Australian Capital Territory", "VIC": "Victoria", "TAS": "Tasmania"}
