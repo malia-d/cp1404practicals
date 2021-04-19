@@ -1,5 +1,5 @@
 """
-
+Print the car details, using the Car class to change the fuel and odometer values, and use string formatting.
 
 Used Cars. Created by Malia, April 2021.
 """
@@ -8,7 +8,7 @@ from prac_06.car import Car
 
 
 def main():
-    """Demo test code to show how to use car class."""
+    """Use the Car class to print car details."""
     my_car = Car("Sedan", 180)
     my_car.drive(30)
     print("fuel =", my_car.fuel)

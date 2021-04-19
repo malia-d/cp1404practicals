@@ -1,5 +1,6 @@
 """
-
+Allow the user to add fuel to the fuel total, drive the car a given distance, and display the car details using string
+formatting.
 
 Car. Created by Malia, April 2021.
 """
@@ -36,4 +37,5 @@ class Car:
         return distance
 
     def __str__(self):
+        """Display Car details using string formatting."""
         return "{}, fuel={}, odometer={}.".format(self.name, self.fuel, self.odometer)

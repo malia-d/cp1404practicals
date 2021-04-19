@@ -1,5 +1,5 @@
 """
-
+List inputted guitars, including guitar position in list, name, year made, and cost, using string formatting.
 
 Guitars. Created by Malia, April 2021.
 """
@@ -8,6 +8,7 @@ from prac_06.guitar import Guitar
 
 
 def main():
+    """Print list of guitars, including guitar position in list, name, year made, and cost."""
     guitars = []
     print("My guitars!")
     name = input("Name: ")
