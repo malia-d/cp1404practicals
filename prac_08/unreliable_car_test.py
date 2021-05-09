@@ -1,7 +1,15 @@
+"""
+Test the Unreliable Car class by creating two cars, one with high reliability and one with low reliability. Test both
+cars multiple times and print the distance each car has driven.
+
+Unreliable Car Test. Created by Malia D'Mello, May 2021.
+"""
+
 from prac_08.unreliable_car import UnreliableCar
 
 
 def main():
+    """Test Unreliable Car class."""
     first_car = UnreliableCar("Prius 1", 100, 95)
     second_car = UnreliableCar("Kia Rio", 100, 5)
 
