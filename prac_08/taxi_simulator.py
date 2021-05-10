@@ -1,3 +1,11 @@
+"""
+Ask the user to select from a menu, inputting the number of the taxi chosen and the distance the taxi is being driven.
+After each trip, the user will be given the trip fare, as well the total bill to date. When the user decides to quit,
+the program will end by displaying the total trip cost and listing the taxis now available.
+
+Taxi Simulator. Created by Malia D'Mello, May 2021.
+"""
+
 from prac_08.taxi import Taxi
 from prac_08.silver_service_taxi import SilverServiceTaxi
 
@@ -5,6 +13,7 @@ MENU = "q)uit, c)hoose taxi, d)rive"
 
 
 def main():
+    """Execute a taxi trip."""
     total_cost = 0
     taxis = [Taxi("Prius", 100), SilverServiceTaxi("Limo", 100, 2), SilverServiceTaxi("Hummer", 200, 4)]
     current_taxi = None
@@ -23,8 +32,8 @@ def main():
         elif menu_selection == "d":
             if current_taxi:
                 current_taxi.start_fare()
-                distance = float(input("Drive how far? "))
-                current_taxi.drive(distance)
+                distance_driven = float(input("Drive how far? "))
+                current_taxi.drive(distance_driven)
                 trip_cost = current_taxi.get_fare()
                 print("Your {} trip cost you ${:.2f}".format(current_taxi.name, current_taxi.get_fare()))
                 total_cost += trip_cost
@@ -41,6 +50,7 @@ def main():
 
 
 def display_taxi_list(taxis):
+    """Display the formatted list of taxis."""
     for i, taxi in enumerate(taxis):
         print("{} - {}".format(i, taxi))
 
