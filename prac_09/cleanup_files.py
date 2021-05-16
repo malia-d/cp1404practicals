@@ -1,7 +1,14 @@
+"""
+Rename files to ensure they use consistent formatting.
+
+Cleanup Files. Created by Malia D'Mello, May 2021.
+"""
+
 import os
 
 
 def main():
+    """Rename files for consistent formatting. """
     os.chdir('Lyrics')
     for directory_name, subdirectories, filenames in os.walk('.'):
         # print("Directory:", directory_name)
