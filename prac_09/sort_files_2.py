@@ -1,8 +1,16 @@
+"""
+Categorise different file extensions and create subdirectories based on these categories. Move each file into their
+designated subdirectory based on their file extension.
+
+Sort Files 2. Created by Malia D'Mello, May 2021.
+"""
+
 import shutil
 import os
 
 
 def main():
+    """Categorise the file extensions, then move each file into their designated subdirectory."""
     extension_to_folder = {}
     os.chdir("FilesToSort")
     for filename in os.listdir('.'):
