@@ -1,6 +1,7 @@
 """
-CP1404/CP5632 Practical
-Testing demo using assert and doctest
+Test multiple functions to ensure they pass.
+
+Testing. Created by Lindsay Ward, Modified by Malia D'Mello, May 2021.
 """
 
 import doctest
@@ -50,8 +51,6 @@ def run_tests():
     assert test_car.fuel == 0, "Car sets fuel correctly"
 
 
-
-
 # (don't change the tests, change the function!)
 
 # starting with a capital and ending with a single full stop.
@@ -66,6 +65,8 @@ def run_tests():
 
 def phrase_to_sentence(phrase):
     """
+    Convert a phrase to a sentence by capitalizing the first letter of the first word, and adding a fullstop at the end
+    if one is not already there.
     >>> phrase_to_sentence("hello")
     'Hello.'
     >>> phrase_to_sentence("It is an ex parrot.")
@@ -73,7 +74,9 @@ def phrase_to_sentence(phrase):
     >>> phrase_to_sentence("this is my dog.")
     'This is my dog.'
     """
+    # Capitalize the first letter of the first word in the phrase.
     sentence = phrase.capitalize()
+    # Add a fullstop to the end of the sentence if it does not already have one.
     if sentence[-1] != ".":
         sentence += "."
     return sentence
